@@ -9,3 +9,16 @@ function App() {
 }
 
 export default App;
+// import React from "react";
+// import Parents from "./components/Parents"
+
+// function App() {
+ 
+//   return (
+//     <div className="App">
+//       <Parents />
+//     </div>
+//   );
+// }
+
+// export default App;
