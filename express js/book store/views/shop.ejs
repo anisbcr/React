@@ -1,0 +1,12 @@
+<%- include('layouts/layout') %>
+<h1>Notre Boutique</h1>
+<div class="book-list">
+    <% products.forEach(product => { %>
+        <div class="book-item">
+            <h2><%= product.title %></h2>
+            <p>Auteur : <%= product.author %></p>
+            <p>Prix : <%= product.price %> €</p>
+            <a href="/buy?id=<%= product._id %>">Acheter</a>
+        </div>
+    <% }) %>
+</div>

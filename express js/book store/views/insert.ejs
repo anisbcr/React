@@ -1,0 +1,17 @@
+<%- include('layouts/layout') %>
+<h1>Ajouter un nouveau livre</h1>
+<form action="/insert" method="POST">
+    <div>
+        <label for="title">Titre :</label>
+        <input type="text" name="title" required>
+    </div>
+    <div>
+        <label for="author">Auteur :</label>
+        <input type="text" name="author" required>
+    </div>
+    <div>
+        <label for="price">Prix :</label>
+        <input type="number" name="price" required>
+    </div>
+    <button type="submit">Ajouter le livre</button>
+</form>

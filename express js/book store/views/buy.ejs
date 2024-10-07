@@ -1,0 +1,10 @@
+<%- include('layouts/layout') %>
+<h1>Finaliser votre achat</h1>
+<form action="/checkout" method="POST">
+    <input type="hidden" name="productId" value="<%= productId %>">
+    <div>
+        <label for="address">Adresse de livraison :</label>
+        <input type="text" name="address" required>
+    </div>
+    <button type="submit">Confirmer l'achat</button>
+</form>
